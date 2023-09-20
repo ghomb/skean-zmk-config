@@ -93,7 +93,7 @@
                 };
 
                 RBrace {
-                    bindings = <right_brace>;
+                    bindings = <&right_brace>;
                     key-positions = <20 21>;
                 };
 
