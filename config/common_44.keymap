@@ -71,6 +71,7 @@
                 , <&macro_tap &kp RIGHT_PARENTHESIS>
                 , <&macro_release &kp RAlt>;
         };
+    };
 
 
 		combos {
