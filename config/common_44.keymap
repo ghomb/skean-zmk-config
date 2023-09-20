@@ -20,6 +20,9 @@
 / {
     behaviors {
         // https://zmk.dev/docs/behaviors/macros#unicode-sequences
+        // https://github.com/samhocevar/wincompose
+        // Unicode code composition: Use <&macro_tap &kp RALT &kp U>, <macro sequence>, <&macro_tap &kp RET>;
+        // Base code composition: Use <&macro_tap &kp RALT>, <macro sequence>;
         left_brace: left_brace {
             compatible = "zmk,behavior-macro";
             label = "ZM_left_brace";
@@ -29,8 +32,7 @@
             bindings
                 = <&macro_tap &kp RALT>
                 , <&macro_tap &kp MINUS>
-                , <&macro_tap &kp LEFT_PARENTHESIS>
-                , <&macro_tap &kp RET>;
+                , <&macro_tap &kp LEFT_PARENTHESIS>;
         };
 
         right_brace: right_brace {
@@ -42,8 +44,7 @@
             bindings
                 = <&macro_tap &kp RALT>
                 , <&macro_tap &kp MINUS>
-                , <&macro_tap &kp RIGHT_PARENTHESIS>
-                , <&macro_tap &kp RET>;
+                , <&macro_tap &kp RIGHT_PARENTHESIS>;
         };
 
         left_bracket: left_bracket {
@@ -55,8 +56,7 @@
             bindings
                 = <&macro_tap &kp RALT>
                 , <&macro_tap &kp LEFT_PARENTHESIS>
-                , <&macro_tap &kp LEFT_PARENTHESIS>
-                , <&macro_tap &kp RET>;
+                , <&macro_tap &kp LEFT_PARENTHESIS>;
         };
 
         right_bracket: right_bracket {
@@ -68,8 +68,7 @@
             bindings
                 = <&macro_tap &kp RALT>
                 , <&macro_tap &kp RIGHT_PARENTHESIS>
-                , <&macro_tap &kp RIGHT_PARENTHESIS>
-                , <&macro_tap &kp RET>;
+                , <&macro_tap &kp RIGHT_PARENTHESIS>;
         };
     };
 
