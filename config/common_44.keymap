@@ -28,7 +28,8 @@
             tap-ms = <40>;
             bindings
                 = <&macro_press   &kp RAlt>
-                , <&macro_tap &kp MINUS &kp LEFT_PARENTHESIS>
+                , <&macro_tap &kp MINUS>
+                , <&macro_tap &kp LEFT_PARENTHESIS>
                 , <&macro_release &kp RAlt>;
         };
 
@@ -40,7 +41,8 @@
             tap-ms = <40>;
             bindings
                 = <&macro_press   &kp RAlt>
-                , <&macro_tap &kp MINUS &kp RIGHT_PARENTHESIS>
+                , <&macro_tap &kp MINUS>
+                , <&macro_tap &kp RIGHT_PARENTHESIS>
                 , <&macro_release &kp RAlt>;
         };
 
@@ -52,7 +54,8 @@
             tap-ms = <40>;
             bindings
                 = <&macro_press   &kp RAlt>
-                , <&macro_tap &kp LEFT_PARENTHESIS &kp LEFT_PARENTHESIS>
+                , <&macro_tap &kp LEFT_PARENTHESIS>
+                , <&macro_tap &kp LEFT_PARENTHESIS>
                 , <&macro_release &kp RAlt>;
         };
 
@@ -64,7 +67,8 @@
             tap-ms = <40>;
             bindings
                 = <&macro_press   &kp RAlt>
-                , <&macro_tap &kp RIGHT_PARENTHESIS &kp RIGHT_PARENTHESIS>
+                , <&macro_tap &kp RIGHT_PARENTHESIS>
+                , <&macro_tap &kp RIGHT_PARENTHESIS>
                 , <&macro_release &kp RAlt>;
         };
 
