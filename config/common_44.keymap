@@ -27,7 +27,7 @@
             wait-ms = <40>;
             tap-ms = <40>;
             bindings
-                = <&macro_tap &kp RALT &kp U>
+                = <&macro_tap &kp RALT>
                 , <&macro_tap &kp MINUS>
                 , <&macro_tap &kp LEFT_PARENTHESIS>
                 , <&macro_tap &kp RET>;
@@ -40,7 +40,7 @@
             wait-ms = <40>;
             tap-ms = <40>;
             bindings
-                = <&macro_tap &kp RALT &kp U>
+                = <&macro_tap &kp RALT>
                 , <&macro_tap &kp MINUS>
                 , <&macro_tap &kp RIGHT_PARENTHESIS>
                 , <&macro_tap &kp RET>;
@@ -53,7 +53,7 @@
             wait-ms = <40>;
             tap-ms = <40>;
             bindings
-                = <&macro_tap &kp RALT &kp U>
+                = <&macro_tap &kp RALT>
                 , <&macro_tap &kp LEFT_PARENTHESIS>
                 , <&macro_tap &kp LEFT_PARENTHESIS>
                 , <&macro_tap &kp RET>;
@@ -66,7 +66,7 @@
             wait-ms = <40>;
             tap-ms = <40>;
             bindings
-                = <&macro_tap &kp RALT &kp U>
+                = <&macro_tap &kp RALT>
                 , <&macro_tap &kp RIGHT_PARENTHESIS>
                 , <&macro_tap &kp RIGHT_PARENTHESIS>
                 , <&macro_tap &kp RET>;
