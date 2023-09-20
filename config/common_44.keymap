@@ -18,7 +18,58 @@
 &mt { quick-tap-ms = <200>; };
 
 / {
-        combos {
+    behaviors {
+        // https://zmk.dev/docs/behaviors/macros#unicode-sequences
+        left_brace: left_brace {
+            compatible = "zmk,behavior-macro";
+            label = "ZM_left_brace";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+                = <&macro_press   &kp RAlt>
+                , <&macro_tap &kp MINUS &kp LEFT_PARENTHESIS>
+                , <&macro_release &kp RAlt>;
+        };
+
+        right_brace: right_brace {
+            compatible = "zmk,behavior-macro";
+            label = "ZM_right_brace";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+                = <&macro_press   &kp RAlt>
+                , <&macro_tap &kp MINUS &kp RIGHT_PARENTHESIS>
+                , <&macro_release &kp RAlt>;
+        };
+
+        left_bracket: left_bracket {
+            compatible = "zmk,behavior-macro";
+            label = "ZM_left_bracket";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+                = <&macro_press   &kp RAlt>
+                , <&macro_tap &kp LEFT_PARENTHESIS &kp LEFT_PARENTHESIS>
+                , <&macro_release &kp RAlt>;
+        };
+
+        right_bracket: right_bracket {
+            compatible = "zmk,behavior-macro";
+            label = "ZM_right_bracket";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+                = <&macro_press   &kp RAlt>
+                , <&macro_tap &kp RIGHT_PARENTHESIS &kp RIGHT_PARENTHESIS>
+                , <&macro_release &kp RAlt>;
+        };
+
+
+		combos {
                 compatible = "zmk,combos";
 
                 LParenthesis {
@@ -32,22 +83,22 @@
                 };
 
                 LBrace {
-                    bindings = <&kp LEFT_BRACE>;
+                    bindings = <&left_brace>;
                     key-positions = <18 19>;
                 };
 
                 RBrace {
-                    bindings = <&kp RIGHT_BRACE>;
+                    bindings = <right_brace>;
                     key-positions = <20 21>;
                 };
 
                 LBracket {
-                    bindings = <&kp LEFT_BRACKET>;
+                    bindings = <&left_bracket>;
                     key-positions = <30 31>;
                 };
 
                 RBracket {
-                    bindings = <&kp RIGHT_BRACKET>;
+                    bindings = <&right_bracket>;
                     key-positions = <32 33>;
                 };
         };
