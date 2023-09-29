@@ -162,10 +162,10 @@
 //        | LALT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | RALT |
 //                           | RSE | SPC | LWR |   | LWR | BKSP | RSE |
                         bindings = <
-   &kp LWIN &kp GRAVE &kp Q &kp W  &kp E &kp R &kp T &td_yo        &td_gh  &kp I     &kp O   &kp P    &kp LBKT &mt RWIN RBKT
-            &kp LCTRL &kp A &td_yi &kp D &kp F &kp G &kp H         &kp J   &kp K     &kp L   &kp SEMI &mt RCTRL SQT
-            &kp LALT  &kp Z &kp X  &kp C &kp V &kp B &kp N         &td_hs  &kp COMMA &kp DOT &kp FSLH &mt RALT BSLH
-                         &lt RSE TAB &mt LSHFT SPACE &lt LWR RET &lt LWR ESC &mt RSHFT BSPC &lt RSE DEL
+   &kp LWIN &kp GRAVE &kp Q &kp W  &kp E &kp R &td_yo              &kp Y  &td_gh  &kp I     &kp O   &kp P    &kp LBKT &mt RWIN RBKT
+            &kp LCTRL &kp A &td_yi &kp D &kp F &kp G               &kp H  &kp J   &kp K     &kp L   &kp SEMI &mt RCTRL SQT
+            &kp LALT  &kp Z &kp X  &kp C &kp V &kp B               &kp N  &td_hs  &kp COMMA &kp DOT &kp FSLH &mt RALT BSLH
+                    &lt RSE TAB &mt LSHFT SPACE &lt LWR RET   &lt LWR ESC &mt RSHFT BSPC &lt RSE DEL
                         >;
                 };
                 lower_layer {
