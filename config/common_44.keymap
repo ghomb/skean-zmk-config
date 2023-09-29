@@ -73,7 +73,7 @@
         
         ukr_gh: ukr_gh {
             compatible = "zmk,behavior-macro";
-            label = "ZM_right_bracket";
+            label = "ZM_ukr_gh";
             #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
