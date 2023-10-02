@@ -87,7 +87,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_RU_YO";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp T>, <&kp GRAVE>;
         };
 
@@ -95,7 +95,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_RU_HARD_SIGN";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp M>, <&kp RIGHT_BRACKET>;
         };
         
@@ -103,7 +103,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_UKR_YI";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp S>, <&kp RIGHT_BRACKET>;
         };
         
@@ -111,7 +111,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_UKR_GH";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp U>, <&ukr_gh>;
         };
 
